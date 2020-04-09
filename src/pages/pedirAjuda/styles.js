@@ -28,7 +28,7 @@ export default StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        marginBottom: 150,
+        marginBottom: 50,
     },
     headerTitle: {
         fontSize: 36,
@@ -56,7 +56,7 @@ export default StyleSheet.create({
         backgroundColor: '#1A1A1D',
         borderRadius: 5,
         width: 352,
-        height: 366,
+        height: 800,
         marginBottom: 50,
         marginHorizontal: 4
     },
@@ -65,8 +65,15 @@ export default StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         width: 335,
-        height: 70,
         left: 8,
+    },
+    inputAreaGroup: {
+        flex: 1,
+        justifyContent: 'center',
+        flexDirection: 'column',
+        width: 335,
+        left: 8,
+        marginTop: 17
     },
     inputText: {
         borderStyle: 'solid',
@@ -74,7 +81,20 @@ export default StyleSheet.create({
         borderWidth: 1,
         borderRadius: 5,
         height: 50,
-        paddingHorizontal: 15
+        paddingHorizontal: 15,
+        color: "#fff",
+    },
+    inputTextArea: {
+        borderStyle: 'solid',
+        borderColor: '#fff',
+        borderWidth: 1,
+        borderRadius: 5,
+        height: 100,
+        paddingHorizontal: 15,
+        paddingVertical: 8,
+        color: "#fff",
+        textAlignVertical: "top",
+        textAlign: "justify",
     },
     inputLabel: {
         color: color,
@@ -89,6 +109,7 @@ export default StyleSheet.create({
         height: 52,
         left: 8,
         marginBottom: 20,
+        marginTop: 20,
         alignItems: 'center',
         justifyContent: 'center',
     },
