@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { View, ScrollView, Image, Text, TouchableOpacity } from 'react-native';
 
-import coronaImg from '../../assets/corona.png';
+import coronaImg from '../../assets/logo.png';
 import styles from './styles';
 
 export default function Inicial() {
@@ -16,8 +16,7 @@ export default function Inicial() {
     return (
         <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
             <View style={styles.header}>
-                {/* <Image source={coronaImg} /> */}
-                <Text style={styles.headerText}>LOGO</Text>
+                <Image source={coronaImg} />
             </View>
 
             <View style={styles.body}>

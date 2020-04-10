@@ -63,6 +63,7 @@ export default StyleSheet.create({
     titleData: {
         color: "#7D40E7",
         left: 8,
+        fontWeight: 'bold',
         fontSize: 26
     },
     inputGroup: {

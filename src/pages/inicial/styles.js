@@ -7,11 +7,8 @@ export default StyleSheet.create({
         backgroundColor: '#202124',
     },
     header: {
-        marginTop: constants.statusBarHeight + 20,
+        marginTop: constants.statusBarHeight,
         alignItems: 'center',
-    },
-    headerText: {
-        color: '#fff'
     },
     body: {
         alignItems: "center",
