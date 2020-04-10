@@ -6,7 +6,7 @@ import { View, Text, TextInput, TouchableOpacity, ScrollView } from 'react-nativ
 
 import styles from './styles';
 
-export default function PedirAjuda() {
+export default function Indicar() {
     const navigation = useNavigation();
 
     //botão voltar para a tela anterior
@@ -22,15 +22,17 @@ export default function PedirAjuda() {
             </TouchableOpacity>
 
             <View style={styles.header}>
-                <Text style={styles.headerTitle}>Pedir Ajuda</Text>
-                <Text style={styles.headerDescription}>Aqui você poderá se cadastrar no nosso banco de necessitados. Seu pedido aparecerá no feed de Ajuda.</Text>
+                <Text style={styles.headerTitle}>Conheço alguem que precisa</Text>
+                <Text style={styles.headerDescription}>Nesta seção você poderá nos informar sobre alguem que está precisando de ajuda, mas que não tem acesso a internet ou não consegue acessar nossa página por algum motivo. Esse é um espaço de ajuda ao próximo.</Text>
                 <View style={styles.retangulo}></View>
             </View>
 
 
             <View style={styles.body}>
+                {/* Dados do ajudante */}
+                <Text style={styles.titleData}>Seus Dados</Text>
                 <View style={styles.inputGroup}>
-                    <Text style={styles.inputLabel}>Nome</Text>
+                    <Text style={styles.inputLabel}>Nome (Opcional)</Text>
                     <TextInput
                         style={styles.inputText}
                         placeholder="Seu nome"
@@ -44,18 +46,36 @@ export default function PedirAjuda() {
                         placeholderTextColor="#c5c5c5"
                         keyboardType="numeric" />
                 </View>
+
+                {/* dados do necessitado */}
+                <Text style={styles.titleData}>Dados de quem está precisando</Text>
+                <View style={styles.inputGroup}>
+                    <Text style={styles.inputLabel}>Nome</Text>
+                    <TextInput
+                        style={styles.inputText}
+                        placeholder="Nome da pessoa"
+                        placeholderTextColor="#c5c5c5" />
+                </View>
+                <View style={styles.inputGroup}>
+                    <Text style={styles.inputLabel}>Telefone (Opcional)</Text>
+                    <TextInput
+                        style={styles.inputText}
+                        placeholder="Telefone da pessoa"
+                        placeholderTextColor="#c5c5c5"
+                        keyboardType="numeric" />
+                </View>
                 <View style={styles.inputGroup}>
                     <Text style={styles.inputLabel}>Cidade</Text>
                     <TextInput
                         style={styles.inputText}
-                        placeholder="Sua cidade"
+                        placeholder="Cidade onde ela reside"
                         placeholderTextColor="#c5c5c5" />
                 </View>
                 <View style={styles.inputGroup}>
                     <Text style={styles.inputLabel}>Endereço</Text>
                     <TextInput
                         style={styles.inputText}
-                        placeholder="Seu endereço"
+                        placeholder="Endereço da pessoa"
                         placeholderTextColor="#c5c5c5" />
                 </View>
                 <View style={styles.inputGroup}>
@@ -71,20 +91,21 @@ export default function PedirAjuda() {
                     <TextInput
                         style={styles.inputText}
                         placeholder="Um ponto de referência"
-                        placeholderTextColor="#c5c5c5" />
+                        placeholderTextColor="#c5c5c5"
+                    />
                 </View>
                 <View style={styles.inputAreaGroup}>
                     <Text style={styles.inputLabel}>Descrição</Text>
                     <TextInput
                         style={styles.inputTextArea}
-                        placeholder="Descreva sua história e o que está precisando"
+                        placeholder="Descreva sobre a história dessa pessoa e o que ela está precisando..."
                         placeholderTextColor="#c5c5c5"
                         multiline={true}
                         numberOfLines={8} />
                 </View>
                 <TouchableOpacity style={styles.buttonForm}>
                     <Feather name="heart" size={16} color="#fff" />
-                    <Text style={styles.buttonFormText}>Pedir Ajuda</Text>
+                    <Text style={styles.buttonFormText}>Indicar para Ajuda</Text>
                 </TouchableOpacity>
             </View>
         </ScrollView>

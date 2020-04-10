@@ -6,7 +6,7 @@ import { View, Text, TextInput, TouchableOpacity, ScrollView } from 'react-nativ
 
 import styles from './styles';
 
-export default function PedirAjuda() {
+export default function QueroAjudar() {
     const navigation = useNavigation();
 
     //botão voltar para a tela anterior
@@ -22,7 +22,7 @@ export default function PedirAjuda() {
             </TouchableOpacity>
 
             <View style={styles.header}>
-                <Text style={styles.headerTitle}>Pedir Ajuda</Text>
+                <Text style={styles.headerTitle}>Posso Ajudar</Text>
                 <Text style={styles.headerDescription}>Agradeçoes muito seu interesse em ajudar ! Precisaremos apenas de alguns dados para entrar em contato com você, ou que clique no link do Whatsapp para se comunicar diretamente com um de nossos representantes.</Text>
                 <View style={styles.retangulo}></View>
             </View>
@@ -40,10 +40,11 @@ export default function PedirAjuda() {
                     <TextInput
                         style={styles.inputText}
                         placeholder="Seu telefone com DDD"
-                        placeholderTextColor="#c5c5c5" />
+                        placeholderTextColor="#c5c5c5"
+                        keyboardType="numeric" />
                 </View>
                 <View style={styles.inputGroup}>
-                    <Text style={styles.inputLabel}>Email(opcional)</Text>
+                    <Text style={styles.inputLabel}>Email (opcional)</Text>
                     <TextInput
                         style={styles.inputText}
                         placeholder="Seu email"
