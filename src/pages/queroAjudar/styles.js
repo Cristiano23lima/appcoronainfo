@@ -56,7 +56,7 @@ export default StyleSheet.create({
         backgroundColor: '#1A1A1D',
         borderRadius: 5,
         width: 352,
-        height: 800,
+        height: 360,
         marginBottom: 50,
         marginHorizontal: 4
     },
@@ -67,14 +67,6 @@ export default StyleSheet.create({
         width: 335,
         left: 8,
     },
-    inputAreaGroup: {
-        flex: 1,
-        justifyContent: 'center',
-        flexDirection: 'column',
-        width: 335,
-        left: 8,
-        marginTop: 17
-    },
     inputText: {
         borderStyle: 'solid',
         borderColor: '#fff',
@@ -83,18 +75,6 @@ export default StyleSheet.create({
         height: 50,
         paddingHorizontal: 15,
         color: "#fff",
-    },
-    inputTextArea: {
-        borderStyle: 'solid',
-        borderColor: '#fff',
-        borderWidth: 1,
-        borderRadius: 5,
-        height: 100,
-        paddingHorizontal: 15,
-        paddingVertical: 8,
-        color: "#fff",
-        textAlignVertical: "top",
-        textAlign: "justify",
     },
     inputLabel: {
         color: color,
@@ -108,18 +88,18 @@ export default StyleSheet.create({
         width: 334,
         height: 52,
         left: 8,
-        flexDirection: 'row',
         marginBottom: 20,
         marginTop: 20,
         alignItems: 'center',
+        flexDirection: 'row',
         justifyContent: 'center',
     },
     buttonFormText: {
         color: color,
         fontSize: 18,
-        marginLeft: 8,
         fontWeight: 'bold',
         lineHeight: 25,
+        marginLeft: 8,
         textAlign: 'center'
     }
 });

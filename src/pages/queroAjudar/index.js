@@ -23,10 +23,9 @@ export default function PedirAjuda() {
 
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>Pedir Ajuda</Text>
-                <Text style={styles.headerDescription}>Aqui você poderá se cadastrar no nosso banco de necessitados. Seu pedido aparecerá no feed de Ajuda.</Text>
+                <Text style={styles.headerDescription}>Agradeçoes muito seu interesse em ajudar ! Precisaremos apenas de alguns dados para entrar em contato com você, ou que clique no link do Whatsapp para se comunicar diretamente com um de nossos representantes.</Text>
                 <View style={styles.retangulo}></View>
             </View>
-
 
             <View style={styles.body}>
                 <View style={styles.inputGroup}>
@@ -40,49 +39,19 @@ export default function PedirAjuda() {
                     <Text style={styles.inputLabel}>Telefone</Text>
                     <TextInput
                         style={styles.inputText}
-                        placeholder="Seu telefone"
+                        placeholder="Seu telefone com DDD"
                         placeholderTextColor="#c5c5c5" />
                 </View>
                 <View style={styles.inputGroup}>
-                    <Text style={styles.inputLabel}>Cidade</Text>
+                    <Text style={styles.inputLabel}>Email(opcional)</Text>
                     <TextInput
                         style={styles.inputText}
-                        placeholder="Sua cidade"
+                        placeholder="Seu email"
                         placeholderTextColor="#c5c5c5" />
-                </View>
-                <View style={styles.inputGroup}>
-                    <Text style={styles.inputLabel}>Endereço</Text>
-                    <TextInput
-                        style={styles.inputText}
-                        placeholder="Seu endereço"
-                        placeholderTextColor="#c5c5c5" />
-                </View>
-                <View style={styles.inputGroup}>
-                    <Text style={styles.inputLabel}>Número</Text>
-                    <TextInput
-                        style={styles.inputText}
-                        placeholder="Número da casa"
-                        placeholderTextColor="#c5c5c5" />
-                </View>
-                <View style={styles.inputGroup}>
-                    <Text style={styles.inputLabel}>Ponto de referência</Text>
-                    <TextInput
-                        style={styles.inputText}
-                        placeholder="Um ponto de referência"
-                        placeholderTextColor="#c5c5c5" />
-                </View>
-                <View style={styles.inputAreaGroup}>
-                    <Text style={styles.inputLabel}>Descrição</Text>
-                    <TextInput
-                        style={styles.inputTextArea}
-                        placeholder="Descreva sua história e o que está precisando"
-                        placeholderTextColor="#c5c5c5"
-                        multiline={true}
-                        numberOfLines={8} />
                 </View>
                 <TouchableOpacity style={styles.buttonForm}>
                     <Feather name="heart" size={16} color="#fff" />
-                    <Text style={styles.buttonFormText}>Pedir Ajuda</Text>
+                    <Text style={styles.buttonFormText}>Desejo Ajudar</Text>
                 </TouchableOpacity>
             </View>
         </ScrollView>
